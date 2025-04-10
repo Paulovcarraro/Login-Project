@@ -171,9 +171,12 @@ a:hover {
 
 /* Tabela de usuários */
 .usuarios__cadastrados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
   padding: 20px;
-  background-color: #121212;
   border-radius: 12px;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -190,12 +193,12 @@ a:hover {
 #tabelaUsuarios {
   width: 100%;
   border-collapse: collapse;
-  background-color: #1e1e1e;
+  background-color: #121212;
   border-radius: 8px;
   overflow: hidden;
   width: 100%;
-  max-width: 600px; 
-  table-layout: fixed; 
+  max-width: 600px;
+  table-layout: fixed;
   word-wrap: break-word;
 }
 
@@ -218,5 +221,3 @@ a:hover {
 #tabelaUsuarios tbody tr:hover {
   background-color: #2a2a2a;
 }
-
-
