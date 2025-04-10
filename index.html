@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Spotify</title>
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -12,7 +11,18 @@
       <div class="logo_login">
         <div class="form_login">
           <h1>Faça seu login</h1>
-          <form action="#" method="post">
+          <form id="formLogin" action="#" method="post">
+            <!-- Nome -->
+            <div class="input__nome">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome"
+                required
+              />
+            </div>
+
             <!-- Endereço de E-mail -->
             <div class="input__email">
               <label for="email">Endereço de e-mail</label>
@@ -39,12 +49,36 @@
                 <label for="remember_me">Lembrar minha senha</label>
               </div>
             </div>
+
             <div class="input__entrar">
               <button type="submit" class="entrar">Entrar</button>
             </div>
-    
+          </form>
+
+          <!-- Exibição dos usuários em tabela -->
+          <div class="usuarios__cadastrados">
+            <h2>Usuários cadastrados:</h2>
+            <table
+              id="tabelaUsuarios"
+              border="1"
+              cellpadding="8"
+              cellspacing="0"
+            >
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Os dados vão aqui pelo JS -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
+
+    <script src="./JavaScript/main.js"></script>
   </body>
 </html>
